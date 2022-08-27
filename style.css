@@ -1,0 +1,146 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D8DAE2;
+    overflow: hidden;
+}
+
+.ball{
+    border-radius: 50%;
+    background-color: #E5E7F0;
+    width: 310px;
+    height: 310px;
+    position: absolute;
+    top: -18%;
+    right: 300px;
+    z-index: -1;
+}
+
+.ball-2{
+    border-radius: 50%;
+    background-color: #E5E7F0;
+    width: 310px;
+    height: 310px;
+    position: absolute;
+    bottom: -18%;
+    left: 300px;
+    z-index: -1;
+}
+
+.container{
+    width: calc(1566px - 189px + 62px);
+    height: 800;
+    align-items: center;
+    background-color: #EFF0F1;
+    padding: 62px;
+    border-radius: 26px;
+    position: relative;
+    box-shadow: 0 60px 10px rgba(132, 132, 132, 0.3);
+}
+
+.header__title{
+    color: #0E0E38;
+    font-size: 32px;
+}
+
+.header__categories{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.header__categories-item{
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.header__categories-link{
+    text-decoration: none;
+    color: #0E0E38; 
+    text-transform: capitalize;
+}
+
+.cards{
+    margin: 56px 0 10px 0;
+    border-radius: 24px;
+    display: flex;
+}
+
+.card-item{
+    width: 437px;
+    height: 489px;
+    background-color: #fff;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    margin-right: 64px;
+}
+
+.card-item:last-child{
+    margin-right: 0;
+}
+
+.card-item__thumb{
+    width: 389px;
+    height: 268px;
+    text-align: center;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.card-item__small{
+   display: flex;
+}
+
+.card-item__small--item{
+    width: 119px;
+    height: 97px;
+    border-radius: 24px;
+    margin:16px 16px 16px 0;
+    object-fit: cover;
+}
+
+.card-item__small--item:last-child{
+    margin-right: 0;
+}
+
+.category{
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    align-items: center;
+}
+
+.category__name{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.category__view{
+    display: flex;
+    align-items: center;
+}
+
+.category__img{
+    font-size: 18px;
+}
+
+.category__amount{
+    font-size: 16px;
+    margin-left: 4px;
+    
+}
